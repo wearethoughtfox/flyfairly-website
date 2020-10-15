@@ -1,0 +1,64 @@
+<footer class="bg-black pv5 pv6-l cf ph3" id="fadein-backtotop">
+
+  <div class="white fl w-100 w-50-ns ph3 ph5-ns" id="contact">
+    <h2>Fine art conservators</h2>
+    <ul>
+      <li>April Johnson ACR</li>
+      <li>Ambrose Scott-Moncrieff ACR</li>
+      <li>Lucy Ingham MA</li>
+      <li>Clare Mitchell MA (Collections Management)</li>
+    </ul>
+    <div class="pa4">
+      <img src="{{ site.baseurl }}/images/icon-logo.jpg" class="w4 dib bg-white pa3" alt="Icon logo">
+    </div>
+  </div>
+  <div class="fl w-100 w-50-ns ph3 ph5-ns">
+    <h2 class="white f2 f1-l lh-title mt0 mb2 fw1">Get in
+      touch</h2>
+    <form class="black-80 pl2-l" method="POST" submission="Hurray! A Brick House contact form message" name="contact"
+      method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+      <div>
+        <label for="name" class="f4 b db mb2 white">Name</label>
+        <input id="name" name="name" class="input-reset ba b--black-20 pa2 mb2 db w-100 mw6-l" type="text"
+          aria-describedby="name">
+      </div>
+
+      <div>
+        <label for="email" class="f4 b db mb2 white">Email</label>
+        <input id="email" name="email" class="input-reset ba b--black-20 pa2 mb2 db w-100 mw6-l" type="email"
+          aria-describedby="email">
+      </div>
+
+      <div>
+        <label for="comment" class="f4 b db mb2 white">Message</label>
+        <textarea rows="5" id="comment" name="comment" class="input-reset custom-textarea mw6-l"
+          aria-describedby="comment-desc"></textarea>
+      </div>
+
+      <div data-netlify-recaptcha="true"></div>
+
+      <button type="submit" class="bg-primary customgrey mw5">Send</button>
+    </form>
+    <a href="#top" class="back-to-top fixed bottom-1 right-1 bg-white lh-solid z-999" data-aos="fade-left"
+      data-aos-anchor="#fadein-backtotop">
+      <img src="{{ site.baseurl }}/images/arrow.svg" class="di w2" alt="Scroll to top button">
+    </a>
+  </div>
+</footer>
+
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
