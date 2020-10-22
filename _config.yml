@@ -13,6 +13,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jemoji
 
 include:
   - _pages
@@ -23,6 +24,12 @@ sass:
 
 collections:
   rights:
+    output: true
+    permalink: /:collection/:slug
+  howitworks:
+    output: true
+    permalink: /:collection/:slug
+  help:
     output: true
     permalink: /:collection/:slug
 

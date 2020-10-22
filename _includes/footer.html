@@ -1,21 +1,31 @@
-<footer class="pv5 pv6-l cf ph3" id="fadein-backtotop">
+<footer class="pt2 pb5 pb6-l cf ph4 bg-customgrey" id="fadein-backtotop">
 
   <div class="cf">
-    <div class="fl w-100 w-20-ns tc pv5">
-      Our services
-    </div>
-    <div class="fl w-100 w-20-ns tc pv5">
-      How it works
-    </div>
-    <div class="fl w-100 w-20-ns tc pv5">
-      Support
-    </div>
-    <div class="fl w-100 w-20-ns tc pv5">
+    <div class="fl w-100 w-25-ns pv5">
+      <p class="pb3 fw7">Your rights</p>
 
-    </div>
-    <div class="fl w-100 w-20-ns tc pv5">
+      {% for rights in site.rights reversed %}
+      <a href="{{ rights.url }}" class="link db dim">
+        <p class="mb0 fw4 pb2">{{ rights.title }}</p>
+      </a>
 
+      {% endfor %}
     </div>
+    <div class="fl w-100 w-25-ns pv5">
+
+      <p class="pb3 fw7">How it works</p>
+      {% for how in site.howitworks %}
+      <a href="{{ how.url }}" class="link db dim">
+        <p class="mb0 fw4 pb2">{{ how.title }}</p>
+      </a>
+
+      {% endfor %}
+    </div>
+    <div class="fl w-100 w-25-ns pv5">
+      Help
+    </div>
+
+
   </div>
 
 
