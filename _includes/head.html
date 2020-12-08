@@ -5,6 +5,400 @@
 
   <link rel='icon' href='favicon.ico'>
 
+  <style>
+    body {
+      font-family: "Lato", -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+      color: #555952
+    }
+
+    h1,
+    h2 {
+      font-family: "Lato", -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+      font-weight: 700
+    }
+
+    p {
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0
+    }
+
+    a {
+      color: #47CEFF
+    }
+
+    .bg-primary {
+      background-color: #47CEFF
+    }
+
+    .bg-secondary {
+      background-color: #FF47CE
+    }
+
+    .bg-customgrey {
+      background-color: #eeeff0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    @media screen and (prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+    }
+
+    html {
+      line-height: 1.15;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%
+    }
+
+    footer,
+    header,
+    nav {
+      display: block
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0
+    }
+
+    main {
+      display: block
+    }
+
+    a {
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects
+    }
+
+    img {
+      border-style: none
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit
+    }
+
+    html,
+    body,
+    div,
+    main,
+    footer,
+    header,
+    a,
+    h1,
+    h2,
+    p,
+    ul,
+    li,
+    .border-box {
+      box-sizing: border-box
+    }
+
+    img {
+      max-width: 100%
+    }
+
+    .bw1 {
+      border-width: .125rem
+    }
+
+    .right-1 {
+      right: 1rem
+    }
+
+    .bottom-1 {
+      bottom: 1rem
+    }
+
+    .cf:before,
+    .cf:after {
+      content: " ";
+      display: table
+    }
+
+    .cf:after {
+      clear: both
+    }
+
+    .cf {
+      *zoom: 1
+    }
+
+    .di {
+      display: inline
+    }
+
+    .db {
+      display: block
+    }
+
+    .dib {
+      display: inline-block
+    }
+
+    @media screen and (min-width:60em) {
+      .dib-l {
+        display: inline-block
+      }
+
+      .dt-l {
+        display: table
+      }
+
+      .dtc-l {
+        display: table-cell
+      }
+    }
+
+    .fl {
+      float: left;
+      _display: inline
+    }
+
+    .fw4 {
+      font-weight: 400
+    }
+
+    .fw6 {
+      font-weight: 600
+    }
+
+    .fw7 {
+      font-weight: 700
+    }
+
+    .min-h5 {
+      min-height: 26rem
+    }
+
+    @media screen and (min-width:60em) {
+      .min-h6-l {
+        min-height: 32rem
+      }
+    }
+
+    .lh-solid {
+      line-height: 1
+    }
+
+    .link {
+      text-decoration: none
+    }
+
+    .list {
+      list-style-type: none
+    }
+
+    .w2 {
+      width: 2rem
+    }
+
+    .w4 {
+      width: 8rem
+    }
+
+    .w-100 {
+      width: 100%
+    }
+
+    @media screen and (min-width:30em) {
+      .w-25-ns {
+        width: 25%
+      }
+    }
+
+    @media screen and (min-width:60em) {
+      .w-25-l {
+        width: 25%
+      }
+    }
+
+    .relative {
+      position: relative
+    }
+
+    .fixed {
+      position: fixed
+    }
+
+    .mid-gray {
+      color: #555
+    }
+
+    .white {
+      color: #fff
+    }
+
+    .bg-white {
+      background-color: #fff
+    }
+
+    .pb1 {
+      padding-bottom: .25rem
+    }
+
+    .pb2 {
+      padding-bottom: .5rem
+    }
+
+    .pb3 {
+      padding-bottom: 1rem
+    }
+
+    .pb4 {
+      padding-bottom: 2rem
+    }
+
+    .pb5 {
+      padding-bottom: 4rem
+    }
+
+    .pt2 {
+      padding-top: .5rem
+    }
+
+    .pt3 {
+      padding-top: 1rem
+    }
+
+    .pt5 {
+      padding-top: 4rem
+    }
+
+    .pv2 {
+      padding-top: .5rem;
+      padding-bottom: .5rem
+    }
+
+    .pv4 {
+      padding-top: 2rem;
+      padding-bottom: 2rem
+    }
+
+    .pv5 {
+      padding-top: 4rem;
+      padding-bottom: 4rem
+    }
+
+    .ph3 {
+      padding-left: 1rem;
+      padding-right: 1rem
+    }
+
+    .ph4 {
+      padding-left: 2rem;
+      padding-right: 2rem
+    }
+
+    .ma0 {
+      margin: 0
+    }
+
+    .mr4 {
+      margin-right: 2rem
+    }
+
+    .mb0 {
+      margin-bottom: 0
+    }
+
+    .mb2 {
+      margin-bottom: .5rem
+    }
+
+    .mt0 {
+      margin-top: 0
+    }
+
+    @media screen and (min-width:30em) {
+      .ph4-ns {
+        padding-left: 2rem;
+        padding-right: 2rem
+      }
+    }
+
+    @media screen and (min-width:60em) {
+      .pl4-l {
+        padding-left: 2rem
+      }
+
+      .pr5-l {
+        padding-right: 4rem
+      }
+
+      .pb3-l {
+        padding-bottom: 1rem
+      }
+
+      .pb6-l {
+        padding-bottom: 8rem
+      }
+
+      .ph4-l {
+        padding-left: 2rem;
+        padding-right: 2rem
+      }
+
+      .mb0-l {
+        margin-bottom: 0
+      }
+    }
+
+    .tc {
+      text-align: center
+    }
+
+    @media screen and (min-width:60em) {
+      .tl-l {
+        text-align: left
+      }
+    }
+
+    .f1 {
+      font-size: 3rem
+    }
+
+    .f4 {
+      font-size: 1.25rem
+    }
+
+    .f5 {
+      font-size: 1rem
+    }
+
+    @media screen and (min-width:60em) {
+      .f-headline-l {
+        font-size: 6rem
+      }
+
+      .f3-l {
+        font-size: 1.5rem
+      }
+    }
+
+    .center {
+      margin-right: auto;
+      margin-left: auto
+    }
+
+    .v-mid {
+      vertical-align: middle
+    }
+
+    .dim {
+      opacity: 1
+    }
+
+    .z-999 {
+      z-index: 999
+    }
+  </style>
+
   <!-- External CSS -->
   <script>
     function loadCSS(e, t, n) { "use strict"; function r() { for (var t, i = 0; i < d.length; i++)d[i].href && d[i].href.indexOf(e) > -1 && (t = !0); t ? o.media = n || "all" : setTimeout(r) } var o = window.document.createElement("link"), i = t || window.document.getElementsByTagName("script")[0], d = window.document.styleSheets; return o.rel = "stylesheet", o.href = e, o.media = "only x", i.parentNode.insertBefore(o, i), r(), o }
