@@ -141,6 +141,7 @@ $breakpoint-large: 'screen and (min-width: 60em)' !default;
 //font-family
 body {
     font-family: $sans-serif;
+    color: $body-color;
   }
   
   h1,.h1,
@@ -156,6 +157,10 @@ body {
   p {
       -webkit-margin-before: 0;
       -webkit-margin-after: 0;
+  }
+
+  a {
+    color: $primary-color;
   }
   
 

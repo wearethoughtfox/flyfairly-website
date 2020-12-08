@@ -3,33 +3,16 @@ title: "Compensation for delayed or cancelled flights"
 layout: default
 ---
 
-<header class="bg-primary min-h5 min-h6-l relative pb4">
+<header class="min-h5 min-h6-l relative pb4">
     <div class="center ph3 ph4-ns ph4-l pt5 pb3">
-        <h1 class="f1 f-headline-l mt0 white">Flight delayed, cancelled or overbooked?</h1>
-        <h2 class="f4 f3-l white fw6">You may be entitled to up to €600 in compensation</h2>
+        <h1 class="f1 f-headline-l mt0">Flight delayed, cancelled or overbooked?</h1>
+        <h2 class="f4 f3-l fw6">You may be entitled to up to €600 in compensation</h2>
     </div>
-    <button class="w5 ml4 bg-secondary white fw7">Check your flight</button>
 
-    <ul class="list ph3 ph4-ns pv4 white">
-        <li class="dib mr4">:bulb: Risk free - no hassle, no stress</li>
-        <li class="dib mr4">:money_with_wings: No win, no fee</li>
-        <li class="dib mr4">:balance_scale: Legal action</li>
+    <ul class="list ph3 ph4-ns pv4">
+        <li class="db dib-l mr4">:bulb: Risk free - no hassle, no stress</li>
+        <li class="db dib-l mr4">:money_with_wings: No win, no fee</li>
+        <li class="db dib-l mr4">:balance_scale: Legal action</li>
     </ul>
 
 </header>
-
-<section class="bg-secondary pv5 pb3-l ph4 overflow-hidden" id="about">
-    <h2 class="sans-serif f6 ttu tracked white">How it works</h2>
-    <h1 class="f2 f1-l white fw7">A simple, hassle-free service</h1>
-
-    {% for service in site.howitworks %}
-
-    <article class="fl w-100 w-33-l pa3-ns pb4" data-aos="fade-up">
-        <a href="{{ service.url }}" class="pb2 link db dim white">
-            <h1 class="sans-serif f4 mb0 fw4 ttu tracked">{{ service.title }}</h1>
-        </a>
-        <p class="white pb3 lh-copy">{{ service.excerpt }}</p>
-    </article>
-    {% endfor %}
-
-</section>
